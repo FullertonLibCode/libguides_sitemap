@@ -5,7 +5,8 @@ on:
     branches:
       - main
   workflow_dispatch:
-
+  schedule:
+    - cron: '0 2 * * *'  # Runs daily at 2 AM UTC
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
