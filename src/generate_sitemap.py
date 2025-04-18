@@ -21,11 +21,15 @@ def extract_nav_links(page_content, base_url):
     if not page_content:
         return set()
     soup = BeautifulSoup(page_content, 'html.parser')
-    # Target the <ul> with class "nav nav-tabs split-button-nav"
-    nav = soup.find('ul', class_='nav nav-tabs split-button-nav')
+    # Look for <ul> with 'nav' and 'split-button-nav' in class
+    nav = soup.find('ul', class_=lambda x: x and 'nav' in x and 'split-button-nav' in x)
     if not nav:
-        print(f"No navigation found for {base_url}")
-        return set()
+        # Optional fallback: try <nav> tag
+        nav = soup.find('nav')
+        if not nav:
+            print(f"No navigation found for {base_url}")
+            return set()
+        print(f"Using <nav> fallback for {base_url}")
     
     links = set()
     for a_tag in nav.find_all('a', href=True):
@@ -39,8 +43,8 @@ def extract_nav_links(page_content, base_url):
 def generate_sitemap(urls):
     urlset = ET.Element('urlset', xmlns="http://www.sitemaps.org/schemas/sitemap/0.9")
     for url in sorted(urls):
-        url_element = ET.SubElement(urlset, 'url')  # Fixed: SubElement
-        loc = ET.SubElement(url_element, 'loc')    # Fixed: SubElement
+        url_element = ET.SubElement(urlset, 'url')
+        loc = ET.SubElement(url_element, 'loc')
         loc.text = url
     
     rough_string = ET.tostring(urlset, 'utf-8')
