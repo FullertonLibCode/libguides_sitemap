@@ -1,0 +1,86 @@
+import requests
+from bs4 import BeautifulSoup
+import xml.etree.ElementTree as ET
+from urllib.parse import urljoin
+from xml.dom import minidom
+
+# Function to fetch a webpage
+def fetch_page(url):
+    try:
+        headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'}
+        response = requests.get(url, headers=headers, timeout=10)
+        response.raise_for_status()
+        return response.text
+    except requests.RequestException as e:
+        print(f"Failed to fetch {url}: {e}")
+        return None
+
+# Function to extract navigation links from a page
+def extract_nav_links(page_content, base_url):
+    if not page_content:
+        return set()
+    soup = BeautifulSoup(page_content, 'html.parser')
+    # Target the <ul> with class "nav nav-tabs split-button-nav"
+    nav = soup.find('ul', class_='nav nav-tabs split-button-nav')
+    if not nav:
+        print(f"No navigation found for {base_url}")
+        return set()
+    
+    links = set()
+    # Find all <a> tags within the navigation
+    for a_tag in nav.find_all('a', href=True):
+        href = a_tag['href']
+        # Convert relative URLs to absolute
+        full_url = urljoin(base_url, href)
+        # Filter for valid URLs within the same domain
+        if full_url.startswith('https://libraryguides.fullerton.edu'):
+            links.add(full_url)
+    return links
+
+# Function to generate sitemap XML
+def generate_sitemap(urls):
+    urlset = ET.Element('urlset', xmlns="http://www.sitemaps.org/schemas/sitemap/0.9")
+    for url in sorted(urls):  # Sort for consistency
+        url_element = ET.Subelement(urlset, 'url')
+        loc = ET.Subelement(url_element, 'loc')
+        loc.text = url
+    
+    # Pretty print XML
+    rough_string = ET.tostring(urlset, 'utf-8')
+    reparsed = minidom.parseString(rough_string)
+    pretty_xml = reparsed.toprettyxml(indent="  ")
+    return pretty_xml
+
+# Main process
+def main():
+    sitemap_url = "https://libraryguides.fullerton.edu/sitemap.xml"
+    
+    # Fetch sitemap
+    sitemap_content = fetch_page(sitemap_url)
+    if not sitemap_content:
+        print("Failed to fetch sitemap")
+        return
+    
+    # Parse sitemap XML
+    soup = BeautifulSoup(sitemap_content, 'xml')
+    urls = [loc.text for loc in soup.find_all('loc')]
+    
+    # Collect all navigation links
+    all_nav_links = set()
+    for url in urls:
+        print(f"Processing {url}")
+        page_content = fetch_page(url)
+        nav_links = extract_nav_links(page_content, url)
+        all_nav_links.update(nav_links)
+    
+    # Generate new sitemap
+    new_sitemap = generate_sitemap(all_nav_links)
+    
+    # Write to file
+    with open("sitemap.xml", "w", encoding="utf-8") as f:
+        f.write(new_sitemap)
+    
+    print(f"Generated new sitemap with {len(all_nav_links)} URLs")
+
+if __name__ == "__main__":
+    main()
