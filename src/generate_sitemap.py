@@ -3,6 +3,7 @@ from bs4 import BeautifulSoup
 import xml.etree.ElementTree as ET
 from urllib.parse import urljoin
 from xml.dom import minidom
+import time
 
 # Function to fetch a webpage
 def fetch_page(url):
@@ -27,12 +28,9 @@ def extract_nav_links(page_content, base_url):
         return set()
     
     links = set()
-    # Find all <a> tags within the navigation
     for a_tag in nav.find_all('a', href=True):
         href = a_tag['href']
-        # Convert relative URLs to absolute
         full_url = urljoin(base_url, href)
-        # Filter for valid URLs within the same domain
         if full_url.startswith('https://libraryguides.fullerton.edu'):
             links.add(full_url)
     return links
@@ -40,12 +38,11 @@ def extract_nav_links(page_content, base_url):
 # Function to generate sitemap XML
 def generate_sitemap(urls):
     urlset = ET.Element('urlset', xmlns="http://www.sitemaps.org/schemas/sitemap/0.9")
-    for url in sorted(urls):  # Sort for consistency
-        url_element = ET.Subelement(urlset, 'url')
-        loc = ET.Subelement(url_element, 'loc')
+    for url in sorted(urls):
+        url_element = ET.SubElement(urlset, 'url')  # Fixed: SubElement
+        loc = ET.SubElement(url_element, 'loc')    # Fixed: SubElement
         loc.text = url
     
-    # Pretty print XML
     rough_string = ET.tostring(urlset, 'utf-8')
     reparsed = minidom.parseString(rough_string)
     pretty_xml = reparsed.toprettyxml(indent="  ")
@@ -67,11 +64,20 @@ def main():
     
     # Collect all navigation links
     all_nav_links = set()
+    failed_pages = []
     for url in urls:
         print(f"Processing {url}")
         page_content = fetch_page(url)
-        nav_links = extract_nav_links(page_content, url)
-        all_nav_links.update(nav_links)
+        if page_content:
+            nav_links = extract_nav_links(page_content, url)
+            all_nav_links.update(nav_links)
+        else:
+            failed_pages.append(url)
+        time.sleep(1)  # Avoid rate-limiting
+    
+    # Log failed pages
+    if failed_pages:
+        print(f"Failed to process {len(failed_pages)} pages: {failed_pages}")
     
     # Generate new sitemap
     new_sitemap = generate_sitemap(all_nav_links)
