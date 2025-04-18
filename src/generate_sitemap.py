@@ -20,11 +20,11 @@ def fetch_page(url):
 def extract_nav_links(page_content, base_url):
     if not page_content:
         return set()
-    soup = BeautifulSoup(page_content, 'html.parser')
+    soup = BeautifulSoup(page_content, 'lxml')  # Use lxml for HTML parsing
     # Look for <ul> with 'nav' and 'split-button-nav' in class
     nav = soup.find('ul', class_=lambda x: x and 'nav' in x and 'split-button-nav' in x)
     if not nav:
-        # Optional fallback: try <nav> tag
+        # Fallback: try <nav> tag
         nav = soup.find('nav')
         if not nav:
             print(f"No navigation found for {base_url}")
@@ -62,8 +62,8 @@ def main():
         print("Failed to fetch sitemap")
         return
     
-    # Parse sitemap XML
-    soup = BeautifulSoup(sitemap_content, 'xml')
+    # Parse sitemap XML with lxml
+    soup = BeautifulSoup(sitemap_content, 'lxml-xml')  # Explicitly use lxml for XML
     urls = [loc.text for loc in soup.find_all('loc')]
     
     # Collect all navigation links
