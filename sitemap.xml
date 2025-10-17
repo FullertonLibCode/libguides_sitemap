@@ -2968,9 +2968,6 @@
     <loc>https://libraryguides.fullerton.edu/c.php?g=513710&amp;p=6438490</loc>
   </url>
   <url>
-    <loc>https://libraryguides.fullerton.edu/c.php?g=553931&amp;p=11182338</loc>
-  </url>
-  <url>
     <loc>https://libraryguides.fullerton.edu/c.php?g=553931&amp;p=3805978</loc>
   </url>
   <url>
@@ -3661,82 +3658,88 @@
     <loc>https://libraryguides.fullerton.edu/titansremembercovid19/commarchive</loc>
   </url>
   <url>
-    <loc>https://libraryguides.fullerton.edu/uasc/apop</loc>
-  </url>
-  <url>
     <loc>https://libraryguides.fullerton.edu/uasc/blog</loc>
-  </url>
-  <url>
-    <loc>https://libraryguides.fullerton.edu/uasc/chicanx</loc>
-  </url>
-  <url>
-    <loc>https://libraryguides.fullerton.edu/uasc/collectionsguide</loc>
-  </url>
-  <url>
-    <loc>https://libraryguides.fullerton.edu/uasc/contactus</loc>
-  </url>
-  <url>
-    <loc>https://libraryguides.fullerton.edu/uasc/donations</loc>
-  </url>
-  <url>
-    <loc>https://libraryguides.fullerton.edu/uasc/exhibits</loc>
-  </url>
-  <url>
-    <loc>https://libraryguides.fullerton.edu/uasc/findsearch</loc>
-  </url>
-  <url>
-    <loc>https://libraryguides.fullerton.edu/uasc/freedomctr</loc>
-  </url>
-  <url>
-    <loc>https://libraryguides.fullerton.edu/uasc/home</loc>
-  </url>
-  <url>
-    <loc>https://libraryguides.fullerton.edu/uasc/localhist</loc>
-  </url>
-  <url>
-    <loc>https://libraryguides.fullerton.edu/uasc/primaryonline</loc>
-  </url>
-  <url>
-    <loc>https://libraryguides.fullerton.edu/uasc/puzzles</loc>
-  </url>
-  <url>
-    <loc>https://libraryguides.fullerton.edu/uasc/research</loc>
-  </url>
-  <url>
-    <loc>https://libraryguides.fullerton.edu/uasc/researchhelp</loc>
-  </url>
-  <url>
-    <loc>https://libraryguides.fullerton.edu/uasc/sciencefiction</loc>
-  </url>
-  <url>
-    <loc>https://libraryguides.fullerton.edu/uasc/speccoll</loc>
-  </url>
-  <url>
-    <loc>https://libraryguides.fullerton.edu/uasc/spectopics</loc>
-  </url>
-  <url>
-    <loc>https://libraryguides.fullerton.edu/uasc/tours</loc>
-  </url>
-  <url>
-    <loc>https://libraryguides.fullerton.edu/uasc/tutorials</loc>
   </url>
   <url>
     <loc>https://libraryguides.fullerton.edu/uasc/univarchives</loc>
   </url>
   <url>
-    <loc>https://libraryguides.fullerton.edu/uasc/unrest</loc>
-  </url>
-  <url>
-    <loc>https://libraryguides.fullerton.edu/uasc/ushist</loc>
-  </url>
-  <url>
-    <loc>https://libraryguides.fullerton.edu/uasc/web-archiving-csuf</loc>
-  </url>
-  <url>
-    <loc>https://libraryguides.fullerton.edu/uasc/worldhist</loc>
-  </url>
-  <url>
     <loc>https://libraryguides.fullerton.edu/us-census</loc>
+  </url>
+  <url>
+    <loc>https://libraryguides.fullerton.edu/visiting/apop</loc>
+  </url>
+  <url>
+    <loc>https://libraryguides.fullerton.edu/visiting/chicanx</loc>
+  </url>
+  <url>
+    <loc>https://libraryguides.fullerton.edu/visiting/collectionsguide</loc>
+  </url>
+  <url>
+    <loc>https://libraryguides.fullerton.edu/visiting/contactus</loc>
+  </url>
+  <url>
+    <loc>https://libraryguides.fullerton.edu/visiting/donations</loc>
+  </url>
+  <url>
+    <loc>https://libraryguides.fullerton.edu/visiting/exhibits</loc>
+  </url>
+  <url>
+    <loc>https://libraryguides.fullerton.edu/visiting/findsearch</loc>
+  </url>
+  <url>
+    <loc>https://libraryguides.fullerton.edu/visiting/freedomctr</loc>
+  </url>
+  <url>
+    <loc>https://libraryguides.fullerton.edu/visiting/home</loc>
+  </url>
+  <url>
+    <loc>https://libraryguides.fullerton.edu/visiting/localhist</loc>
+  </url>
+  <url>
+    <loc>https://libraryguides.fullerton.edu/visiting/primaryonline</loc>
+  </url>
+  <url>
+    <loc>https://libraryguides.fullerton.edu/visiting/puzzles</loc>
+  </url>
+  <url>
+    <loc>https://libraryguides.fullerton.edu/visiting/readingroom</loc>
+  </url>
+  <url>
+    <loc>https://libraryguides.fullerton.edu/visiting/research</loc>
+  </url>
+  <url>
+    <loc>https://libraryguides.fullerton.edu/visiting/researchhelp</loc>
+  </url>
+  <url>
+    <loc>https://libraryguides.fullerton.edu/visiting/sciencefiction</loc>
+  </url>
+  <url>
+    <loc>https://libraryguides.fullerton.edu/visiting/speccoll</loc>
+  </url>
+  <url>
+    <loc>https://libraryguides.fullerton.edu/visiting/spectopics</loc>
+  </url>
+  <url>
+    <loc>https://libraryguides.fullerton.edu/visiting/tours</loc>
+  </url>
+  <url>
+    <loc>https://libraryguides.fullerton.edu/visiting/tutorials</loc>
+  </url>
+  <url>
+    <loc>https://libraryguides.fullerton.edu/visiting/univarchives</loc>
+  </url>
+  <url>
+    <loc>https://libraryguides.fullerton.edu/visiting/unrest</loc>
+  </url>
+  <url>
+    <loc>https://libraryguides.fullerton.edu/visiting/ushist</loc>
+  </url>
+  <url>
+    <loc>https://libraryguides.fullerton.edu/visiting/web-archiving-csuf</loc>
+  </url>
+  <url>
+    <loc>https://libraryguides.fullerton.edu/visiting/worldhist</loc>
   </url>
   <url>
     <loc>https://libraryguides.fullerton.edu/web_archiving</loc>
