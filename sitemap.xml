@@ -256,6 +256,9 @@
     <loc>https://libraryguides.fullerton.edu/c.php?g=1131781&amp;p=8260745</loc>
   </url>
   <url>
+    <loc>https://libraryguides.fullerton.edu/c.php?g=1134908&amp;p=11533754</loc>
+  </url>
+  <url>
     <loc>https://libraryguides.fullerton.edu/c.php?g=1134908&amp;p=8282714</loc>
   </url>
   <url>
@@ -3481,9 +3484,6 @@
     <loc>https://libraryguides.fullerton.edu/endnoteweb#s-lg-box-33679102</loc>
   </url>
   <url>
-    <loc>https://libraryguides.fullerton.edu/est2418725</loc>
-  </url>
-  <url>
     <loc>https://libraryguides.fullerton.edu/faculty/publishing</loc>
   </url>
   <url>
@@ -3566,9 +3566,6 @@
   </url>
   <url>
     <loc>https://libraryguides.fullerton.edu/makerspace/virtualreality</loc>
-  </url>
-  <url>
-    <loc>https://libraryguides.fullerton.edu/mylibrary</loc>
   </url>
   <url>
     <loc>https://libraryguides.fullerton.edu/nursing/CPGs</loc>
@@ -3769,16 +3766,13 @@
     <loc>https://libraryguides.fullerton.edu/researchessentials</loc>
   </url>
   <url>
-    <loc>https://libraryguides.fullerton.edu/settings</loc>
-  </url>
-  <url>
-    <loc>https://libraryguides.fullerton.edu/settings/storage?ref=usb</loc>
-  </url>
-  <url>
     <loc>https://libraryguides.fullerton.edu/sotl/publishing</loc>
   </url>
   <url>
     <loc>https://libraryguides.fullerton.edu/sourceevaluation</loc>
+  </url>
+  <url>
+    <loc>https://libraryguides.fullerton.edu/storage</loc>
   </url>
   <url>
     <loc>https://libraryguides.fullerton.edu/strategic/videos</loc>
@@ -3817,7 +3811,10 @@
     <loc>https://libraryguides.fullerton.edu/us-census</loc>
   </url>
   <url>
-    <loc>https://libraryguides.fullerton.edu/user/logout</loc>
+    <loc>https://libraryguides.fullerton.edu/user/login/</loc>
+  </url>
+  <url>
+    <loc>https://libraryguides.fullerton.edu/user/register/</loc>
   </url>
   <url>
     <loc>https://libraryguides.fullerton.edu/visiting/apop</loc>
