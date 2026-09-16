@@ -2728,6 +2728,9 @@
     <loc>https://libraryguides.fullerton.edu/c.php?g=190092&amp;p=10049749</loc>
   </url>
   <url>
+    <loc>https://libraryguides.fullerton.edu/c.php?g=190092&amp;p=11658664</loc>
+  </url>
+  <url>
     <loc>https://libraryguides.fullerton.edu/c.php?g=190092&amp;p=1255724</loc>
   </url>
   <url>
@@ -2993,6 +2996,36 @@
   </url>
   <url>
     <loc>https://libraryguides.fullerton.edu/c.php?g=690146&amp;p=4879934</loc>
+  </url>
+  <url>
+    <loc>https://libraryguides.fullerton.edu/c.php?g=713397&amp;p=10463703</loc>
+  </url>
+  <url>
+    <loc>https://libraryguides.fullerton.edu/c.php?g=713397&amp;p=5075246</loc>
+  </url>
+  <url>
+    <loc>https://libraryguides.fullerton.edu/c.php?g=713397&amp;p=5075249</loc>
+  </url>
+  <url>
+    <loc>https://libraryguides.fullerton.edu/c.php?g=713397&amp;p=5075250</loc>
+  </url>
+  <url>
+    <loc>https://libraryguides.fullerton.edu/c.php?g=713397&amp;p=5075253</loc>
+  </url>
+  <url>
+    <loc>https://libraryguides.fullerton.edu/c.php?g=713397&amp;p=5075258</loc>
+  </url>
+  <url>
+    <loc>https://libraryguides.fullerton.edu/c.php?g=713397&amp;p=5075261</loc>
+  </url>
+  <url>
+    <loc>https://libraryguides.fullerton.edu/c.php?g=713397&amp;p=5077508</loc>
+  </url>
+  <url>
+    <loc>https://libraryguides.fullerton.edu/c.php?g=713397&amp;p=6877125</loc>
+  </url>
+  <url>
+    <loc>https://libraryguides.fullerton.edu/c.php?g=713397&amp;p=7905458</loc>
   </url>
   <url>
     <loc>https://libraryguides.fullerton.edu/c.php?g=732752&amp;p=5235030</loc>
@@ -3529,9 +3562,6 @@
     <loc>https://libraryguides.fullerton.edu/makerspace/vinylcutter</loc>
   </url>
   <url>
-    <loc>https://libraryguides.fullerton.edu/mylibrary</loc>
-  </url>
-  <url>
     <loc>https://libraryguides.fullerton.edu/nursing/CPGs</loc>
   </url>
   <url>
@@ -3730,16 +3760,13 @@
     <loc>https://libraryguides.fullerton.edu/researchessentials</loc>
   </url>
   <url>
-    <loc>https://libraryguides.fullerton.edu/settings</loc>
-  </url>
-  <url>
-    <loc>https://libraryguides.fullerton.edu/settings/storage?ref=usb</loc>
-  </url>
-  <url>
     <loc>https://libraryguides.fullerton.edu/sotl/publishing</loc>
   </url>
   <url>
     <loc>https://libraryguides.fullerton.edu/sourceevaluation</loc>
+  </url>
+  <url>
+    <loc>https://libraryguides.fullerton.edu/storage</loc>
   </url>
   <url>
     <loc>https://libraryguides.fullerton.edu/strategic/videos</loc>
@@ -3763,9 +3790,6 @@
     <loc>https://libraryguides.fullerton.edu/textbooks</loc>
   </url>
   <url>
-    <loc>https://libraryguides.fullerton.edu/tiff89</loc>
-  </url>
-  <url>
     <loc>https://libraryguides.fullerton.edu/titansremembercovid19/campuspages</loc>
   </url>
   <url>
@@ -3781,7 +3805,10 @@
     <loc>https://libraryguides.fullerton.edu/us-census</loc>
   </url>
   <url>
-    <loc>https://libraryguides.fullerton.edu/user/logout</loc>
+    <loc>https://libraryguides.fullerton.edu/user/login/</loc>
+  </url>
+  <url>
+    <loc>https://libraryguides.fullerton.edu/user/register/</loc>
   </url>
   <url>
     <loc>https://libraryguides.fullerton.edu/visiting/apop</loc>
